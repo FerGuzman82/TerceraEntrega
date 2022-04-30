@@ -11,10 +11,7 @@
 
      section{
          grid-area: section;
-         flex-direction: column;
-         align-items: center;
-         justify-content: center;
-         text-align: center;
+         @include flex-column-center;
          padding: 10px;
          background: $gradiente-general;
          margin-bottom: 10px;
@@ -45,11 +42,7 @@
   
         section{
             grid-area: section;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
+            @include flex-column-center;
             padding: 10px;
             background: $gradiente-general;
             margin-bottom: 10px;
@@ -78,7 +71,7 @@
     
 //SECCION NOTICIAS
   
-  .contenedorNot{
+  .containerNot{
     width: 100%;
     margin: 20px auto;
     display: grid;
@@ -91,39 +84,28 @@
  
       section {
         grid-area: section;
+        @include flex-column-center;
         height: 150px;
-        display:flex;
-        flex-direction: column;
-        text-align:center;
-        align-items: center;
-        justify-content: center;
         color: $azul-general;
         background: $gradiente-general;
       }
       
       .noticia1{
         grid-area: noticia1;
+        @include flex-column-center;
+        
       }
       
       .noticia2{
         grid-area: noticia2;
+        @include flex-column-center;
       }
       
       .noticia3{
         grid-area: noticia3;
+        @include flex-column-center;
       }
       
-      .contenedorNot .noticia1,
-      .contenedorNot .noticia2, 
-      .contenedorNot .noticia3{
-        display:flex;
-        flex-direction: column;
-        text-align:center;
-        align-items: center;
-        justify-content: center;
-        height: auto;
-        color: $azul-general;
-      }
 }
   
 //CONTACTO
@@ -138,11 +120,7 @@
  
         .mapa{
           grid-area: mapa;
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          justify-content: center;
-          text-align: center;
+          @include flex-column-center;
           padding: 10px;
           margin-bottom: 10px;
         }
