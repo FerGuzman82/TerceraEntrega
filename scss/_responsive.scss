@@ -1,0 +1,76 @@
+//RESPONSIVE
+
+@media (max-width:991px) {
+    .containerNos{
+      display:grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-template-areas: "section"
+                           "direccion1"
+                           "direccion2";
+      row-gap: 10px;
+      margin-bottom: 10px;
+  }
+  }
+
+  @media (max-width:991px) {
+    .containerSer{
+      display:grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-template-areas: "section"
+                           "servicio1"
+                           "servicio2"
+                           "servicio3"
+                           "servicio4";
+      row-gap: 10px;
+      margin-bottom: 10px;
+  }
+  }
+
+  @media (max-width:991px) {
+    .contenedorNot{
+      display:grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto;
+      grid-template-areas: "section"
+                           "noticia1"
+                           "noticia2"
+                           "noticia3";
+      row-gap: 10px;
+      margin-bottom: 10px;
+    }
+    }
+
+    @media (max-width:991px) {
+        .containerCon{
+          display:grid;
+          grid-template-columns: 100%;
+          grid-template-rows: auto;
+          grid-template-areas: "mapa"
+                               "formulario";
+          row-gap: 10px;
+          margin-bottom: 10px;
+        }
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item:not(.social) {
+              text-align:center;
+              padding-bottom:20px;
+            }
+        }
+
+        @media (max-width:767px) {
+            .footer-dark .item.text {
+              margin-bottom:0;
+            }
+          }
+
+          @media (max-width:991px) {
+            .footer-dark .item.social {
+              text-align:center;
+              margin-top:20px;
+            }
+          }
+          

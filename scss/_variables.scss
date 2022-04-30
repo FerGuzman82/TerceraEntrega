@@ -1,0 +1,17 @@
+//VARIABLES
+
+  $title-font: normal 24px/1.5 'Open Sans', sans-serif;
+  $gradiente-general: linear-gradient(#eaeaea, #fefefe, #fff);
+  $sombra-general: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px;
+  $azul-general:#1f3144;
+
+// RESET GENERAL
+
+* {
+    margin: 0px;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;  
+}
+

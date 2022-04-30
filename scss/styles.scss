@@ -1,3 +1,31 @@
-h1{
-    color:red
+@import "variables";
+@import "header";
+@import "contenedores";
+@import "footer";
+@import "responsive";
+
+
+/*INICIO-PORTADA*/
+
+.portada{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: auto;
+    background: $gradiente-general;  
 }
+    
+.centrado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: $azul-general; }
+    
+//GALERÍA 
+
+.galeria{
+    box-shadow: $sombra-general;
+ }
