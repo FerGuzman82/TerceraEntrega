@@ -1,3 +1,87 @@
-h1{
-    color:red
+@import "variables";
+@import "mixins";
+@import "header";
+@import "contenedores";
+@import "footer";
+@import "responsive";
+
+
+
+/*INICIO-PORTADA*/
+
+.portada{
+    @include flex-column-center;
+    height: auto;
+    background: $gradiente-general;  
+}
+    
+.centrado{
+    @include flex-column-center;
+    color: $azul-general; }
+    
+//GALERÍA 
+
+.galeria{
+    box-shadow: $sombra-general;
+ }
+
+
+ //EXTEND
+
+ .boton {
+    display: inline-block;
+    width:90px;
+    background-color:#1f3144;
+    text-align:center;
+    color:white;
+    border:1px transparent black;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    border-radius: .25rem;
+    text-decoration: none
+}
+ .boton--serv{
+    @extend .boton;
+    width:290px;
+    margin-top: 10px;
+}
+
+.boton--cerrar{
+    @extend .boton;
+    border:1px solid orange;
+
+}
+
+//MAP
+
+$redes: (
+	twitter: #51b0f857,
+	facebook: #2956a3,  
+	instagram:  #f8cc51,
+);
+
+@each $red, $color in $redes {
+    .red--#{$red} {
+        background: $color;
+        &:hover {
+            background: #51f8e2;
+            .red__nombre {
+                color: $color;
+            }
+        }
+    }
+}
+    
+$estilos: (
+color: rgba(32, 178, 171, 0.459),
+centro: center,
+tFuente: 35px,
+1rem : 1rem
+);
+
+.color {
+background-color: map-get($estilos, color);
+text-align: map-get($estilos, centro);
+padding: map-get($estilos, 1rem);
+font-size:map-get($estilos, tFuente);
 }
