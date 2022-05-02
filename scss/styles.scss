@@ -72,3 +72,16 @@ $redes: (
     }
 }
     
+$estilos: (
+color: rgba(32, 178, 171, 0.459),
+centro: center,
+tFuente: 35px,
+1rem : 1rem
+);
+
+.color {
+background-color: map-get($estilos, color);
+text-align: map-get($estilos, centro);
+padding: map-get($estilos, 1rem);
+font-size:map-get($estilos, tFuente);
+}

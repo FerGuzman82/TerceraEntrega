@@ -347,3 +347,9 @@
     background: #51f8e2; }
     .red--instagram:hover .red__nombre {
       color: #f8cc51; }
+
+.color {
+  background-color: rgba(32, 178, 171, 0.459);
+  text-align: center;
+  padding: 1rem;
+  font-size: 35px; }
