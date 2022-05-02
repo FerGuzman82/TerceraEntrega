@@ -10,20 +10,13 @@
 /*INICIO-PORTADA*/
 
 .portada{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    @include flex-column-center;
     height: auto;
     background: $gradiente-general;  
 }
     
 .centrado{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    @include flex-column-center;
     color: $azul-general; }
     
 //GALERÍA 
@@ -63,7 +56,7 @@
 
 $redes: (
 	twitter: #51b0f857,
-	facebook: #2956a3,
+	facebook: #2956a3,  
 	instagram:  #f8cc51,
 );
 

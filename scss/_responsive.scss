@@ -1,6 +1,23 @@
 //RESPONSIVE
 
 @media (max-width:991px) {
+  .containerIni{
+    display:grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "carrusel"
+                         "titulo"
+                         "item1"
+                         "item2"
+                         "item3"
+                         "item4";
+    row-gap: 10px;
+    margin-bottom: 10px;
+}
+}
+
+
+@media (max-width:991px) {
     .containerNos{
       display:grid;
       grid-template-columns: 100%;
