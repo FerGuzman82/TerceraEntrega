@@ -45,11 +45,11 @@
     grid-template-columns: 50% 50%;
     grid-template-rows: 300px auto;
     grid-template-areas: "section section"
-                         "direccion1 direccion2";
+                         "direccion1 direccion2"
+                         "enfoque enfoque";
     column-gap: 5px;
     margin-bottom: 10px;
     
-
      section{
          grid-area: section;
          @include flex-column-center;
@@ -66,6 +66,13 @@
      .direccion2{
          grid-area: direccion2;
          margin: auto;
+     }
+     .enfoque{
+       grid-area: enfoque;
+       margin: 100px;
+       padding: 10px;
+       @include flex-column-center;
+       box-shadow: $sombra-general;
      }
     } 
   

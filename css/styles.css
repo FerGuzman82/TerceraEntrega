@@ -27,9 +27,7 @@
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: auto auto auto;
-  grid-template-areas: "carrusel carrusel carrusel carrusel"
- "titulo titulo titulo titulo"
- "item1 item2 item3 item4";
+  grid-template-areas: "carrusel carrusel carrusel carrusel" "titulo titulo titulo titulo" "item1 item2 item3 item4";
   column-gap: 5px;
   margin-bottom: 10px; }
 
@@ -61,8 +59,7 @@
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 300px auto;
-  grid-template-areas: "section section"
- "direccion1 direccion2";
+  grid-template-areas: "section section" "direccion1 direccion2" "enfoque enfoque";
   column-gap: 5px;
   margin-bottom: 10px; }
   .containerNos section {
@@ -81,13 +78,22 @@
   .containerNos .direccion2 {
     grid-area: direccion2;
     margin: auto; }
+  .containerNos .enfoque {
+    grid-area: enfoque;
+    margin: 100px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; }
 
 .containerSer {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
   grid-template-rows: 300px auto auto auto;
-  grid-template-areas: "section section section section"
- "servicio1 servicio2 servicio3 servicio4";
+  grid-template-areas: "section section section section" "servicio1 servicio2 servicio3 servicio4";
   column-gap: 5px;
   margin-bottom: 10px; }
   .containerSer section {
@@ -120,8 +126,7 @@
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, auto);
-  grid-template-areas: "section section section"
- "noticia1 noticia2 noticia3"; }
+  grid-template-areas: "section section section" "noticia1 noticia2 noticia3"; }
   .containerNot section {
     grid-area: section;
     display: flex;
@@ -238,12 +243,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: "carrusel"
- "titulo"
- "item1"
- "item2"
- "item3"
- "item4";
+    grid-template-areas: "carrusel" "titulo" "item1" "item2" "item3" "item4";
     row-gap: 10px;
     margin-bottom: 10px; } }
 
@@ -252,9 +252,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: "section"
- "direccion1"
- "direccion2";
+    grid-template-areas: "section" "direccion1" "direccion2" "enfoque";
     row-gap: 10px;
     margin-bottom: 10px; } }
 
@@ -263,11 +261,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: "section"
- "servicio1"
- "servicio2"
- "servicio3"
- "servicio4";
+    grid-template-areas: "section" "servicio1" "servicio2" "servicio3" "servicio4";
     row-gap: 10px;
     margin-bottom: 10px; } }
 
@@ -276,10 +270,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: "section"
- "noticia1"
- "noticia2"
- "noticia3";
+    grid-template-areas: "section" "noticia1" "noticia2" "noticia3";
     row-gap: 10px;
     margin-bottom: 10px; } }
 
@@ -288,8 +279,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: "mapa"
- "formulario";
+    grid-template-areas: "mapa" "formulario";
     row-gap: 10px;
     margin-bottom: 10px; } }
 
@@ -367,9 +357,3 @@
     background: #51f8e2; }
     .red--instagram:hover .red__nombre {
       color: #f8cc51; }
-
-.color {
-  background-color: rgba(32, 178, 171, 0.459);
-  text-align: center;
-  padding: 1rem;
-  font-size: 35px; }
