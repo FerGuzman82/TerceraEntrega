@@ -6,11 +6,11 @@
   box-sizing: border-box; }
 
 #logo {
-  width: 180px; }
+  width: 200px; }
 
 .navAzul {
   width: 100%;
-  height: 5px;
+  height: 20px;
   background-color: #1f3144; }
 
 #social {
@@ -20,15 +20,15 @@
 
 .navegador {
   width: 100%;
+  font-size: large;
   margin-bottom: 10px;
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; }
 
 .containerIni {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: auto auto auto;
-  grid-template-areas: "carrusel carrusel carrusel carrusel" "titulo titulo titulo titulo" "item1 item2 item3 item4";
-  column-gap: 5px;
+  grid-template-rows: auto auto auto auto auto;
+  grid-template-areas: "carrusel carrusel carrusel carrusel" "titulo titulo titulo titulo" "item1 item2 item3 item4" "subtitulo1 subtitulo1 subtitulo1" "cliente1 cliente2 cliente3";
   margin-bottom: 10px; }
 
 .carrusel {
@@ -53,6 +53,22 @@
 
 .item4 {
   grid-area: item4;
+  margin: auto; }
+
+.subtitulo1 {
+  grid-area: subtitulo1;
+  margin: auto; }
+
+.cliente1 {
+  grid-area: cliente1;
+  margin: auto; }
+
+.cliente2 {
+  grid-area: cliente2;
+  margin: auto; }
+
+.cliente3 {
+  grid-area: cliente3;
   margin: auto; }
 
 .containerNos {
@@ -125,8 +141,8 @@
   display: grid;
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(2, auto);
-  grid-template-areas: "section section section" "noticia1 noticia2 noticia3"; }
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: "section section section" "noticia1 noticia2 noticia3" "subtitulo subtitulo subtitulo" "blog1 blog2 blog3"; }
   .containerNot section {
     grid-area: section;
     display: flex;
@@ -135,8 +151,8 @@
     justify-content: center;
     text-align: center;
     height: 150px;
-    color: #1f3144;
-    background: linear-gradient(#eaeaea, #fefefe, #fff); }
+    background-color: #1f3144;
+    color: white; }
   .containerNot .noticia1 {
     grid-area: noticia1;
     display: flex;
@@ -153,6 +169,36 @@
     text-align: center; }
   .containerNot .noticia3 {
     grid-area: noticia3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  .containerNot .subtitulo {
+    grid-area: subtitulo;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #1f3144;
+    color: white; }
+  .containerNot .blog1 {
+    grid-area: blog1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  .containerNot .blog2 {
+    grid-area: blog2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center; }
+  .containerNot .blog3 {
+    grid-area: blog3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -247,6 +293,12 @@
     row-gap: 10px;
     margin-bottom: 10px; } }
 
+@media (max-width: 991px) and (max-width: 767px) {
+  .display-4 {
+    font-size: 1.1em !important; }
+  h4 {
+    font-size: 0.8em !important; } }
+
 @media (max-width: 991px) {
   .containerNos {
     display: grid;
@@ -304,8 +356,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  height: auto;
-  background: linear-gradient(#eaeaea, #fefefe, #fff); }
+  height: auto; }
 
 .centrado {
   display: flex;
@@ -317,6 +368,10 @@
 
 .galeria {
   box-shadow: rgba(50, 50, 105, 0.15) 0px 2px 5px 0px, rgba(0, 0, 0, 0.05) 0px 1px 1px 0px; }
+
+.carousel-caption {
+  border: black solid 1px;
+  background-color: #1f31449d; }
 
 .boton, .boton--serv, .boton--cerrar {
   display: inline-block;

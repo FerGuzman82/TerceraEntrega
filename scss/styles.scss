@@ -1,3 +1,4 @@
+
 @import "variables";
 @import "mixins";
 @import "header";
@@ -7,26 +8,26 @@
 
 
 
+
 /*INICIO-PORTADA*/
 
 .portada{
     @include flex-column-center;
     height: auto;
-    background: $gradiente-general;  
 }
     
 .centrado{
     @include flex-column-center;
     color: $azul-general; }
 
-
-    
-//GALERÍA 
-
 .galeria{
     box-shadow: $sombra-general;
  }
 
+.carousel-caption{
+    border: black solid 1px;
+    background-color: #1f31449d;
+}
 
  //EXTEND
 
