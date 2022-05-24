@@ -27,8 +27,8 @@
 .containerIni {
   display: grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: auto auto auto auto auto;
-  grid-template-areas: "carrusel carrusel carrusel carrusel" "titulo titulo titulo titulo" "item1 item2 item3 item4" "subtitulo1 subtitulo1 subtitulo1" "cliente1 cliente2 cliente3";
+  grid-template-rows: auto auto auto 200px 350px;
+  grid-template-areas: "carrusel carrusel carrusel carrusel" "titulo titulo titulo titulo" "item1 item2 item3 item4" "subtitulo1 subtitulo1 subtitulo1 subtitulo1" "clientes clientes clientes clientes";
   margin-bottom: 10px; }
 
 .carrusel {
@@ -57,26 +57,24 @@
 
 .subtitulo1 {
   grid-area: subtitulo1;
-  margin: auto; }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: #1f3144;
+  color: white;
+  margin: 20px 0 20px 0; }
 
-.cliente1 {
-  grid-area: cliente1;
-  margin: auto; }
-
-.cliente2 {
-  grid-area: cliente2;
-  margin: auto; }
-
-.cliente3 {
-  grid-area: cliente3;
+.clientes {
+  grid-area: clientes;
   margin: auto; }
 
 .containerNos {
   display: grid;
   grid-template-columns: 50% 50%;
-  grid-template-rows: 300px auto;
-  grid-template-areas: "section section" "direccion1 direccion2" "enfoque enfoque";
-  column-gap: 5px;
+  grid-template-rows: auto auto;
+  grid-template-areas: "section section" "parrafo parrafo" "direccion1 direccion2" "enfoque enfoque";
   margin-bottom: 10px; }
   .containerNos section {
     grid-area: section;
@@ -85,9 +83,19 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+    height: 150px;
+    background-color: #1f3144;
+    margin: 20px 0 20px 0;
+    color: white; }
+  .containerNos .parrafo {
+    grid-area: parrafo;
     padding: 10px;
-    background: linear-gradient(#eaeaea, #fefefe, #fff);
-    margin-bottom: 10px; }
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: large; }
   .containerNos .direccion1 {
     grid-area: direccion1;
     margin: auto; }
@@ -142,7 +150,7 @@
   grid-gap: 10px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, auto);
-  grid-template-areas: "section section section" "noticia1 noticia2 noticia3" "subtitulo subtitulo subtitulo" "blog1 blog2 blog3"; }
+  grid-template-areas: "section section section" "noticia1 noticia2 noticia3" "subtitulo subtitulo subtitulo" "blog blog blog"; }
   .containerNot section {
     grid-area: section;
     display: flex;
@@ -183,24 +191,10 @@
     text-align: center;
     background-color: #1f3144;
     color: white; }
-  .containerNot .blog1 {
-    grid-area: blog1;
+  .containerNot .blog {
+    grid-area: blog;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center; }
-  .containerNot .blog2 {
-    grid-area: blog2;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center; }
-  .containerNot .blog3 {
-    grid-area: blog3;
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     text-align: center; }
@@ -289,7 +283,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: "carrusel" "titulo" "item1" "item2" "item3" "item4";
+    grid-template-areas: "carrusel" "titulo" "item1" "item2" "item3" "item4" "subtitulo1" "clientes";
     row-gap: 10px;
     margin-bottom: 10px; } }
 
@@ -304,7 +298,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: "section" "direccion1" "direccion2" "enfoque";
+    grid-template-areas: "section" "parrafo" "direccion1" "direccion2" "enfoque";
     row-gap: 10px;
     margin-bottom: 10px; } }
 
@@ -322,7 +316,7 @@
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
-    grid-template-areas: "section" "noticia1" "noticia2" "noticia3";
+    grid-template-areas: "section" "noticia1" "noticia2" "noticia3" "subtitulo" "blog";
     row-gap: 10px;
     margin-bottom: 10px; } }
 

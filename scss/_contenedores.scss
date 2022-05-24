@@ -3,12 +3,12 @@
 .containerIni{
   display:grid;
   grid-template-columns: 25% 25% 25% 25%;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto 200px 350px;
   grid-template-areas: "carrusel carrusel carrusel carrusel"
                        "titulo titulo titulo titulo"
                        "item1 item2 item3 item4"
-                       "subtitulo1 subtitulo1 subtitulo1"
-                       "cliente1 cliente2 cliente3";
+                       "subtitulo1 subtitulo1 subtitulo1 subtitulo1"
+                       "clientes clientes clientes clientes";
   margin-bottom: 10px;
 }
 
@@ -43,44 +43,45 @@
 }
 
 .subtitulo1{
-  grid-area: subtitulo1;
-  margin:auto;  
-}
-.cliente1{
-  grid-area: cliente1;
+  grid-area: subtitulo1; 
+  @include flex-column-center;
+  background-color: $azul-general;
+  color: white;
+  margin: 20px 0 20px 0;
+  }
+
+.clientes{
+  grid-area: clientes;
   margin: auto;
 }
-
-.cliente2{
-  grid-area: cliente2;
-  margin: auto;
-}
-
-.cliente3{
-  grid-area: cliente3;
-  margin: auto;
-}
-
 
 //SECCIÓN NOSOTROS
 
 .containerNos{
     display:grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 300px auto;
+    grid-template-rows: auto auto;
     grid-template-areas: "section section"
+                         "parrafo parrafo"
                          "direccion1 direccion2"
                          "enfoque enfoque";
-    column-gap: 5px;
     margin-bottom: 10px;
     
      section{
          grid-area: section;
          @include flex-column-center;
-         padding: 10px;
-         background: $gradiente-general;
-         margin-bottom: 10px;
+         height: 150px;
+         background-color: $azul-general;
+         margin: 20px 0 20px 0;
+         color: white;
     }
+
+    .parrafo{
+      grid-area: parrafo;
+      padding: 10px;
+      @include flex-column-center;
+      font-size: large;
+  }
 
      .direccion1{
          grid-area: direccion1;
@@ -153,7 +154,7 @@
     grid-template-areas: "section section section"
                          "noticia1 noticia2 noticia3"
                          "subtitulo subtitulo subtitulo"
-                         "blog1 blog2 blog3";
+                         "blog blog blog";
                                              
  
       section {
@@ -187,19 +188,9 @@
         color: white;
       }
 
-      .blog1{
-        grid-area: blog1;
-        @include flex-column-center;
-      }
-
-      .blog2{
-        grid-area: blog2;
-        @include flex-column-center;
-      }
-
-      .blog3{
-        grid-area: blog3;
-        @include flex-column-center;
+      .blog{
+        grid-area: blog;
+        @include flex-row-center;
       }
       
 }

@@ -10,7 +10,9 @@
                          "item1"
                          "item2"
                          "item3"
-                         "item4";
+                         "item4"
+                         "subtitulo1"
+                         "clientes";
     row-gap: 10px;
     margin-bottom: 10px;
 }
@@ -33,9 +35,10 @@
     grid-template-columns: 100%;
     grid-template-rows: auto;
     grid-template-areas: "section"
-                          "direccion1"
-                          "direccion2"
-                          "enfoque";
+                         "parrafo"
+                         "direccion1"
+                         "direccion2"
+                         "enfoque";
     row-gap: 10px;
     margin-bottom: 10px;
 }
@@ -64,7 +67,9 @@
     grid-template-areas: "section"
                         "noticia1"
                         "noticia2"
-                        "noticia3";
+                        "noticia3"
+                        "subtitulo"
+                        "blog";
     row-gap: 10px;
     margin-bottom: 10px;
   }
